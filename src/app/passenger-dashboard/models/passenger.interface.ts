@@ -1,0 +1,16 @@
+import { Baggage } from './baggage.interface';
+export interface Child {
+    name: string,
+    age: number
+}
+
+export interface Passenger {
+    //filter(arg0: (passenger: Passenger) => boolean): Passenger;
+    id: number,
+    fullname: string,
+    checkedIn: boolean,
+    checkInDate?: number,
+    children: Child[] | null,
+    nationality: string | null,
+    baggage?: Baggage
+}

@@ -1,0 +1,53 @@
+{
+  "passengers": [
+    {
+      "fullname": "Clara",
+      "id": 1,
+      "checkedIn": true,
+      "baggage": "hold-only",
+      "checkInDate": 1584629630189
+    },
+    {
+      "id": 3,
+      "fullname": "James",
+      "checkedIn": true,
+      "checkInDate": 1510742000000,
+      "children": [
+        {
+          "name": "Clhoe",
+          "age": 7
+        },
+        {
+          "name": "Emma",
+          "age": 5
+        }
+      ],
+      "nationality": "united-states-of-america.svg",
+      "baggage": ""
+    },
+    {
+      "id": 4,
+      "fullname": "Louise",
+      "checkedIn": true,
+      "checkInDate": 1510792653000,
+      "children": [],
+      "nationality": null,
+      "baggage": ""
+    },
+    {
+      "id": 5,
+      "fullname": "Tina",
+      "checkedIn": true,
+      "children": [],
+      "nationality": "united-kingdom.svg",
+      "baggage": "",
+      "checkInDate": 1584605663445
+    },
+    {
+      "fullname": "Marc",
+      "id": 6,
+      "checkedIn": false,
+      "baggage": "hold-only"
+    }
+  ]
+}

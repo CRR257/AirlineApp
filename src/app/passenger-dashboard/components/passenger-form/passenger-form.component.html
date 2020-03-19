@@ -1,0 +1,57 @@
+<form (ngSubmit)="handleSubmit(form.value, form.valid)" #form="ngForm" novalidate>
+    <div class="form-information">
+        Passenger Name:
+        <input type="text" name="fullname" #fullname="ngModel" [ngModel]="detail?.fullname" required /><br>
+        <small *ngIf="fullname.errors?.required">Passenger name is required</small>
+    </div>
+    <div class="form-information">
+        Passenger ID:
+        <input type="text" name="id" #id="ngModel" [ngModel]="detail?.id" required /><br>
+        <small *ngIf="id.errors?.required">ID is required</small>
+    </div>
+    <div class="form-information">
+        <label>
+            <input type="radio" [value]="true" name="checkedIn" [ngModel]="detail?.checkedIn"
+                (ngModelChange)="toggleCheckIn($event)" />
+            Yes
+        </label>
+        <label class="form-information">
+            <input type="radio" [value]="false" name="checkedIn" [ngModel]="detail?.checkedIn"
+                (ngModelChange)="toggleCheckIn($event)" />
+            No
+        </label>
+        <div *ngIf="form.value.checkedIn">
+            Check in date:
+            <input type="number" name="checkInDate" [ngModel]="detail?.checkInDate" />
+        </div>
+        <div class="form-information">
+            Luggage:
+            <select name="baggage" [ngModel]="detail?.baggage">
+                <option *ngFor="let item of baggage" [value]="item.key" [selected]="item.key === detail?.baggage">
+                    {{ item.value }}
+                </option>
+            </select>
+        </div>
+    </div>
+    <div class="form-information">
+        <span><br>
+            Modified value =>
+        </span><br>
+        <span>
+            {{ detail | json }}
+        </span><br>
+        <span><br>
+            Modifying value =>
+        </span><br>
+        <span>
+            {{form.value | json}}
+        </span><br>
+        <span><br>
+            Are modified values invalid?
+        </span>
+        <span><br>
+            {{form.invalid | json}}
+        </span>
+    </div>
+    <button type="submit" [disabled]="form.invalid">Update Passenger</button>
+</form>

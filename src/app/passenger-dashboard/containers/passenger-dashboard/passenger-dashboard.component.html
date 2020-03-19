@@ -1,0 +1,23 @@
+<div class="left">
+    <passenger-count [items]="passengers"></passenger-count>
+    <passenger-actions
+        (filter)="handleFilter($event)"
+        (add)="handleAddPassenger()"
+    ></passenger-actions>
+    <passenger-detail
+        *ngFor="let passenger of passengers"
+        [detail]="passenger"
+        [display]="display"
+        (edit)="handleEdit($event)"
+        (remove)="handleRemove($event)"
+        (select)="handleSelect($event)">
+    </passenger-detail>
+</div>
+<div class="right">
+    <passenger-info 
+        [passenger]="selectedPassenger"
+        [add]="enableNewPassenger"
+        (save)="handleSave($event)"
+        (close)="handleClose()"
+    ></passenger-info>
+</div>
