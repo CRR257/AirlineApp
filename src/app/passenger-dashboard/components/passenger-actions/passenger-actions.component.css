@@ -1,10 +1,11 @@
 button {
     cursor: pointer;
-    background: #060ee0;
+    background: #027ca5;
     margin: 15px 10px 10px 0;
     border: 0;
-    border-radius: 2px;
+    border-radius: 3px;
     padding: 8px 14px;
     text-align: center;
     color: #fff;
+    letter-spacing: 1.1px;
 }

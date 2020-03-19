@@ -1,9 +1,13 @@
 <div class="app">
     <nav class="nav">
-        <a *ngFor="let item of nav" routerLink="item.link" routerLinkActive="active"
+        <!-- <a *ngFor="let item of nav" routerLink="item.link" routerLinkActive="active"
             [routerLinkActiveOptions]="{exact: item.exact}">
             {{ item.name }}
-        </a>
+        </a> -->
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+            true}">Home</a>
+        <a routerLink="/passengers" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+            true}">Passengers</a>
     </nav>
     <router-outlet></router-outlet>
 </div>

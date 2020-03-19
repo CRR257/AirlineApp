@@ -34,7 +34,7 @@ const routes: Routes = [
         PassengerDetailComponent,
         PassengerInfoComponent,
         PassengerFormComponent,
-        PassengerViewComponent
+        PassengerViewComponent,
     ],
     imports: [
         CommonModule,

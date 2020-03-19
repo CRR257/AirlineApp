@@ -7,19 +7,25 @@ import { RouterModule, Routes } from '@angular/router';
 import { PassengerDashboardModule } from './passenger-dashboard/passenger-dashboard.module';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home.component';
+import { PassengerHomeComponent } from './passenger-dashboard/components/passenger-home/passenger-home.component';
+import { PassengerDashboardComponent} from './passenger-dashboard/containers/passenger-dashboard/passenger-dashboard.component';
 import { NotFoundComponent} from './not-found.component';
 
 const routes: Routes = [
   
-  {path: '', redirectTo: 'passengers', pathMatch: 'full'},
+   //{path: '', redirectTo: 'passengers', pathMatch: 'full'},
+  // {path: '**', component: NotFoundComponent}
+
+  //{path: '', component: PassengerHomeComponent },
+  {path: '', component: PassengerHomeComponent },
+  //{ path: 'passengers', component: PassengerDashboardComponent},
   {path: '**', component: NotFoundComponent}
 
 ]
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    PassengerHomeComponent,
     NotFoundComponent
   ],
   imports: [

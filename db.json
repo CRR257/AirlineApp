@@ -8,6 +8,12 @@
       "checkInDate": 1584629630189
     },
     {
+      "fullname": "Marc",
+      "id": 2,
+      "checkedIn": false,
+      "baggage": "hold-only"
+    },
+    {
       "id": 3,
       "fullname": "James",
       "checkedIn": true,
@@ -30,7 +36,16 @@
       "fullname": "Louise",
       "checkedIn": true,
       "checkInDate": 1510792653000,
-      "children": [],
+      "children": [
+        {
+          "name": "Marta",
+          "age": 8
+        },
+        {
+          "name": "Manel",
+          "age": 8
+        }
+      ],
       "nationality": null,
       "baggage": ""
     },
@@ -39,15 +54,17 @@
       "fullname": "Tina",
       "checkedIn": true,
       "children": [],
-      "nationality": "united-kingdom.svg",
+      "nationality": "andorra.svg",
       "baggage": "",
       "checkInDate": 1584605663445
     },
     {
-      "fullname": "Marc",
+      "fullname": "Bernie",
       "id": 6,
       "checkedIn": false,
-      "baggage": "hold-only"
+      "children": [],
+      "nationality": "australia.svg",
+      "baggage": ""
     }
   ]
 }

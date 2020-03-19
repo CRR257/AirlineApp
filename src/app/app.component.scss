@@ -8,13 +8,11 @@
   
   html, body {
     height: 100%;
-    margin: 0;
-    padding: 0;
     background: #fff;
     -webkit-font-smoothing: antialiased;
     color: #545e6f;
   }
-  
+
   img {
     vertical-align: bottom;
   }
@@ -57,10 +55,6 @@
     margin: 5px 0;
   }
   
-  body {
-    padding: 50px;
-  }
-  
   h3 {
     font-size: 22px;
     font-weight: 400;
@@ -73,33 +67,19 @@
   }
 
   .nav {
-    margin: 0 0 10px;
-    padding: 0 0 20px;
+    height: 50px;
     border-bottom: 1px solid #dce5f2;
+    background-color: #147292;
 
     a {
-      background: #3a4250;
-      color: #fff;
-      padding: 4px 10px;
-      margin: 0 20px;
-      border-radius: 2px;
+      color: white;
+      position: relative;
+      margin: 0 16px;
+      top: 12px;
       &.active {
-        color: #b690f1;
-        background: #363c48;
+        text-decoration: underline;
       }
     }
   }
 
-  // a {
-    //   color: black;
-    //   background-color: white;
-    //   position: relative;
-    //   padding: 4px 10px;
-    //   margin: 0 20px;
-    //   border-radius: 2px;
-    //   top: 10px;
-    //   &.active {
-    //     color: blue;
-    //     background: white;
-    //   }
-    // }
+  

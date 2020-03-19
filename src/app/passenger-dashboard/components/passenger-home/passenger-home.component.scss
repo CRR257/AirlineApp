@@ -1,0 +1,16 @@
+.home {
+    display: flex;
+    position: relative;
+    top: 8rem;
+    flex-direction: column;
+    align-items: center;
+        &-title{
+            font-weight: 600;
+            font-size: 20px;
+            margin-bottom: 3rem;
+        }
+        a {
+            color: #307392;
+            font-weight: 600;
+        }
+}

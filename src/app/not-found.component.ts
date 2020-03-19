@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
     selector: 'passenger-not-found',
     template: `
     <div>
-        Not found. <a routerLink="/">Go home</a> ?
+        You haven't selected a passenger. <a routerLink="/passengers">Go select passenger</a> ?
     </div>
     `
 })
