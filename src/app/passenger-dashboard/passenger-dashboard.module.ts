@@ -16,7 +16,7 @@ import { PassengerService } from './services/passenger-dashboard.service';
 import { PassengerInfoComponent } from './components/passenger-info/passenger-info.component';
 import { PassengerViewComponent } from './components/passenger-view/passenger-view.component';
 import { PassengerAllComponent } from './components/passenger-all/passenger-all.component';
-import { PassengerFooterComponent } from './components/passenger-footer/passenger-footer.component';
+
 
 @NgModule({
     declarations: [
@@ -28,8 +28,7 @@ import { PassengerFooterComponent } from './components/passenger-footer/passenge
         PassengerFormComponent,
         PassengerViewComponent,
         PassengerAllComponent,
-        PassengerNotfoundComponent,
-        PassengerFooterComponent      
+        PassengerNotfoundComponent,    
     ],
     imports: [
         CommonModule,

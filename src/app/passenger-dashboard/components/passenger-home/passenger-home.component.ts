@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { PassengerFooterComponent } from '../passenger-footer/passenger-footer.component';
 
 @Component({
   selector: 'app-passenger-home',
@@ -9,7 +8,7 @@ import { PassengerFooterComponent } from '../passenger-footer/passenger-footer.c
 })
 export class PassengerHomeComponent implements OnInit {
 
-  constructor( private router: Router ) { }
+  constructor( private router: Router) { }
 
   ngOnInit(): void {
   }

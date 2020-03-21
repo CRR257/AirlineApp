@@ -1,22 +1,25 @@
-<h3>Total Passengers</h3>
-<div *ngIf="passengers && passengers.length">
-  <ul>
-    <li *ngFor="let passenger of passengers" class="card">
-      <span>Name: {{passenger.fullname}}</span><br>
-      <span>ID: {{passenger.id}}</span>
-      <div>Checked In: {{ passenger.checkedIn ? 'Yes' : 'No' }}</div>
-      <div *ngIf="passenger.checkedIn">Check in date:
-        {{ (passenger.checkInDate ? (passenger.checkInDate | date: 'MMMM d, y') : 'Not checked in') | uppercase }}</div>
-      <div>Nationality: <img src="assets/flags/{{ (passenger.nationality ? passenger.nationality : defaultFlag) }}"
-          width="17" /></div>
-      <div>
-        Children:
-        <ul>
-          <li *ngFor="let child of passenger.children">
-            <span> Name: {{ child.name }} </span> |
-            <span> Age: {{ child.age }} </span>
-        </ul>
-      </div>
-    </li>
-  </ul>
+<div class="content">
+  <h3>Total Passengers</h3>
+  <div *ngIf="passengers && passengers.length">
+    <ul>
+      <li *ngFor="let passenger of passengers" class="card">
+        <span>Name: {{passenger.fullname}}</span><br>
+        <span>ID: {{passenger.id}}</span>
+        <div>Checked In: {{ passenger.checkedIn ? 'Yes' : 'No' }}</div>
+        <div *ngIf="passenger.checkedIn">Check in date:
+          {{ (passenger.checkInDate ? (passenger.checkInDate | date: 'MMMM d, y') : 'Not checked in') | uppercase }}
+        </div>
+        <div>Nationality: <img src="assets/flags/{{ (passenger.nationality ? passenger.nationality : defaultFlag) }}"
+            width="17" /></div>
+        <div>
+          Children:
+          <ul>
+            <li *ngFor="let child of passenger.children">
+              <span> Name: {{ child.name }} </span> |
+              <span> Age: {{ child.age }} </span>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
 </div>

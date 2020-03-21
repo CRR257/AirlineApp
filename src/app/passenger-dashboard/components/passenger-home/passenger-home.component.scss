@@ -6,7 +6,7 @@
   align-items: center;
   &-container {
     position: absolute;
-    top: 14rem;
+    top: 17rem;
     text-align: center;
     &-title {
       font-weight: 700;
@@ -32,4 +32,12 @@ button {
   max-width: 190px;
   padding: 1rem;
   border: 1px solid $white;
+}
+
+.footer {
+  background-color:$turquoise;
+  border-top: 1px solid $white;
+  width: 100%;
+  text-align: center;
+  color: white;
 }

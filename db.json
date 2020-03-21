@@ -5,13 +5,16 @@
       "id": 1,
       "checkedIn": true,
       "baggage": "hold-only",
-      "checkInDate": 1584629630189
+      "checkInDate": 1584629630189,
+      "nationality": "scotland.svg"
     },
     {
       "fullname": "Marc",
       "id": 2,
-      "checkedIn": false,
-      "baggage": "hold-only"
+      "checkedIn": true,
+      "baggage": "hold-only",
+      "checkInDate": 1584629630189,
+      "nationality": "scotland.svg"
     },
     {
       "id": 3,
@@ -33,21 +36,21 @@
     },
     {
       "id": 4,
-      "fullname": "Louise",
+      "fullname": "Marilyn",
       "checkedIn": true,
       "checkInDate": 1510792653000,
       "children": [
         {
-          "name": "Marta",
+          "name": "James",
           "age": 8
         },
         {
-          "name": "Manel",
+          "name": "Joffrey",
           "age": 8
         }
       ],
-      "nationality": null,
-      "baggage": ""
+      "baggage": true,
+      "nationality": "belarus.svg"
     },
     {
       "id": 5,
@@ -65,6 +68,20 @@
       "children": [],
       "nationality": "australia.svg",
       "baggage": ""
+    },
+    {
+      "id": 7,
+      "fullname": "Gal.la",
+      "checkedIn": true,
+      "children": null,
+      "nationality": "sweden.svg"
+    },
+    {
+      "id": 8,
+      "fullname": "Jofre",
+      "checkedIn": false,
+      "children": null,
+      "nationality": "scotland.svg"
     }
   ]
 }
