@@ -13,7 +13,7 @@ import { Passenger } from './../../models/passenger.interface';
 export class PassengerDashboardComponent implements OnInit {
     display: boolean;
     displayDetails: boolean = false;
-    defaultFlag: string = 'flags/european-union.svg';
+    defaultFlag: string = 'european-union.svg';
     passengers: Passenger[];
     selectedPassenger: Passenger;
     error: any;

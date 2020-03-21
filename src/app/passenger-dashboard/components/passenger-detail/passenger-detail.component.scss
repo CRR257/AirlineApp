@@ -1,4 +1,7 @@
-.status {
+@import "../../../../styles.scss";
+
+.passenger {
+    &-status {
     width: 10px;
     height: 10px;
     background: #c0392b;
@@ -9,6 +12,10 @@
     &.checked-in {
         background: #2ecc71;
     }
+    &-info{
+        padding: 8px 0;
+    }
+}
 }
 
 .card {
@@ -21,21 +28,12 @@
 }
 
 button {
-    cursor: pointer;
-    background: #ec921b;
+    background: $orange;
     margin: 15px 10px 10px 0;
-    border: 0;
-    border-radius: 2px;
     padding: 8px 14px;
-    text-align: center;
-    color: #fff;
 }
 
 .date {
     padding: 5px;
     font-weight: bold;
-}
-
-.passenger-info {
-    padding: 8px 0;
 }

@@ -1,4 +1,15 @@
 <div class="home">
-    <span class="home-title">AirlineApp</span> 
-    <a routerLink="/passengers">See our airline's passengers</a>
+    <img src="assets/image/plane.jpg" alt="image">
+    <div class="home-container">
+        <span class="home-container-title">AirlineApp</span><br> 
+        <div class="home-container-links">
+        <button (click)="goPassengers()">See our airline's passengers</button>
+        <button (click)="goTotalPassengers()">See our total airline's passengers</button>
+    </div>
+    </div>
+    <!-- <passenger-footer>
+        <span>aaaaaffff</span>
+    </passenger-footer> -->
+    <!-- <passenger-notfound></passenger-notfound>
+    <passenger-actions></passenger-actions> -->
 </div>

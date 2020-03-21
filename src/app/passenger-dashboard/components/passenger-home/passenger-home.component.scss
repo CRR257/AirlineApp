@@ -1,16 +1,35 @@
+@import "../../../../styles.scss";
+
 .home {
-    display: flex;
-    position: relative;
-    top: 8rem;
-    flex-direction: column;
-    align-items: center;
-        &-title{
-            font-weight: 600;
-            font-size: 20px;
-            margin-bottom: 3rem;
-        }
-        a {
-            color: #307392;
-            font-weight: 600;
-        }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-container {
+    position: absolute;
+    top: 14rem;
+    text-align: center;
+    &-title {
+      font-weight: 700;
+      font-size: 24px;
+    }
+    &-links {
+      position: relative;
+      top: 1rem;
+      a {
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  background: $light-turquoise;
+  max-width: 190px;
+  padding: 1rem;
+  border: 1px solid $white;
 }

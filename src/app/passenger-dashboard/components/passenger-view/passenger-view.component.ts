@@ -24,7 +24,6 @@ export class PassengerViewComponent implements OnInit {
     this.route.params.pipe(switchMap((data: Passenger) => this.service.getPassenger(data.id)))
       .subscribe((data: Passenger) => this.passenger = data)
 
-      //
     this.service
       .getPassenger(1)
       .subscribe((data: Passenger) => {

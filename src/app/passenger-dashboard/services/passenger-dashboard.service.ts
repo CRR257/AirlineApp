@@ -1,7 +1,7 @@
 import { Passenger } from './../models/passenger.interface';
 import { environment } from './../../../environments/environment';
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 const PASSENGER_API: string = `${environment.backend}/passengers`;

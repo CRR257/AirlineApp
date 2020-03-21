@@ -1,11 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+$turquoise: #147292;
+$light-turquoise: #307392;
+$burgundy: #921427;
+$error :red;
+$orange: #ec921b;
+$black: black;
+$white: white;
+
 body {
-    margin: unset;
-    padding: 0 50px;
-    letter-spacing: 1.3px;
+  margin: unset;
+  padding: 4px 50px;
+  letter-spacing: 1.3px;
+}
+
+.card {
+  box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.39);
+  transition: 0.3s;
+  padding: 2px 16px;
+  margin: 25px 0;
+  background-color: #d4d4d4c9;
+  border-radius: 7px;
 }
 
 button {
-    letter-spacing: 1.1px; 
+  letter-spacing: 1.1px;
+  cursor: pointer;
+  border-radius: 2px;
+  text-align: center;
+  color: #fff;
+  border: unset;
+  margin: 15px 10px 10px 0;
 }
-  
+
+ul {
+  padding: unset;
+}
+
+li {
+  list-style-type: none;
+}

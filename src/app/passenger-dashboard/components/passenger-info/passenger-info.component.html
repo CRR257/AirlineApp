@@ -1,4 +1,4 @@
-<div *ngIf="passenger && !add" class="card">
+<div *ngIf="passenger && !add">
     <div>ID: {{ passenger.id }}</div>
     <div>Name: {{ passenger.fullname }}</div>
     <div>Checked In: {{ passenger.checkedIn ? 'Yes' : 'No' }}</div>
@@ -11,7 +11,7 @@
         </ul>
     </div>
 </div>
-<div *ngIf="add" class="card">
+<div *ngIf="add">
     <div>ID: <input type="text" placeholder="Automatic" disabled></div>
     <div>Name: <input type="text" [(ngModel)]="name" placeholder="Passenger's name"></div>
     <div>Checked In:

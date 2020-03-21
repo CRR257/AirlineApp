@@ -1,13 +1,28 @@
 <div class="app">
-    <nav class="nav">
-        <!-- <a *ngFor="let item of nav" routerLink="item.link" routerLinkActive="active"
+  <nav class="nav">
+    <!-- <a *ngFor="let item of nav" routerLink="item.link" routerLinkActive="active"
             [routerLinkActiveOptions]="{exact: item.exact}">
-            {{ item.name }}
-        </a> -->
-        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
-            true}">Home</a>
-        <a routerLink="/passengers" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
-            true}">Passengers</a>
-    </nav>
-    <router-outlet></router-outlet>
+            {{ item.name }}-->
+    <a
+      routerLink="/"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Home</a
+    >
+    <a
+      routerLink="/passengers"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Edit Passengers</a
+    >
+
+    <a
+      routerLink="/all-passengers"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >All Passengers</a
+    >
+  </nav>
+  <router-outlet></router-outlet>
 </div>
+

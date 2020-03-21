@@ -3,7 +3,8 @@ import { Passenger } from '../../models/passenger.interface';
 
 @Component({
     selector: 'passenger-info',
-    template: 'passenger-info.component.html'
+    templateUrl: 'passenger-info.component.html',
+    styleUrls: ['./passenger-info.component.scss']
 })
 export class PassengerInfoComponent {
     defaultFlag: string = 'european-union.svg';

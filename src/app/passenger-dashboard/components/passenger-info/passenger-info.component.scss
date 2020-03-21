@@ -1,0 +1,16 @@
+@import "../../../../styles.scss";
+
+div {
+    padding: 8px 0;
+}
+
+input {
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+button {
+    background: $turquoise;
+    padding: 8px 14px;
+}

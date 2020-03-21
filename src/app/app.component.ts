@@ -22,5 +22,10 @@ export class AppComponent {
       name: 'Passengers',
       exact: true
     },
+    {
+      link: '/all-passengers',
+      name: 'All Passengers',
+      exact: true
+    }
   ]
  }

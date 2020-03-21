@@ -1,15 +1,25 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { PassengerFooterComponent } from '../passenger-footer/passenger-footer.component';
 
 @Component({
   selector: 'app-passenger-home',
   templateUrl: './passenger-home.component.html',
-  styleUrls: ['./passenger-home.component.scss']
+  styleUrls: ['./passenger-home.component.scss'],
 })
 export class PassengerHomeComponent implements OnInit {
 
-  constructor() { }
+  constructor( private router: Router ) { }
 
   ngOnInit(): void {
+  }
+
+  goPassengers() {
+    this.router.navigate(['/passengers']);
+  }
+
+  goTotalPassengers() {
+    this.router.navigate(['/all-passengers']);
   }
 
 }
